@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>新美研究室デモ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=400px, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="height=500px, initial-scale=1, maximum-scale=2">
+
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <p id="insert">0 から9の数字を入力してください</p>
+  <p id="input_w">input:</p>
+  <p id="output_w">output:</p>
+
+  <p id="word0">0</p>
+  <p id="word1">1</p>
+  <p id="word2">2</p>
+  <p id="word3">3</p>
+  <p id="word4">4</p>
+  <p id="word5">5</p>
+  <p id="word6">6</p>
+  <p id="word7">7</p>
+  <p id="word8">8</p>
+  <p id="word9">9</p>
+
+  <p id="result0"></p>
+  <p id="result1"></p>
+  <p id="result2"></p>
+  <p id="result3"></p>
+  <p id="result4"></p>
+  <p id="result5"></p>
+  <p id="result6"></p>
+  <p id="result7"></p>
+  <p id="result8"></p>
+  <p id="result9"></p>
+
+  <p id="line1">---------------------------------------------------</p>
+  <p id="line2">---------------------------------------------------</p>
+  <p id="line3">---------------------------------------------------</p>
+  <p id="line4">---------------------------------------------------</p>
+  <p id="line5">---------------------------------------------------</p>
+  <p id="line6">---------------------------------------------------</p>
+  <p id="line7">---------------------------------------------------</p>
+  <p id="line8">---------------------------------------------------</p>
+  <p id="line9">---------------------------------------------------</p>
+  <p id="line10">---------------------------------------------------</p>
+  <p id="line11">---------------------------------------------------</p>
+  <p id="line12">---------------------------------------------------</p>
+
+
+  <canvas id="paint" width ="400" height="400">
+  </canvas>
+  <canvas id="input" width ="200" height="200">
+  </canvas>
+<!--
+  <button id="clear">Clear</button>
+  <button id="send">Send</button>
+-->
+
+	<input type="button" id="send" value="send" />
+	<input type="button" id="clear" value="clear" />
+
+  <div id="result"></div>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
