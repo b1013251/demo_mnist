@@ -33,7 +33,7 @@ $(function(){
   /*************************************
   Socket.io
   *************************************/
-  var socket = io.connect("http://10.70.86.212:3000");
+  var socket = io.connect("http://" + location.host );
 
   socket.on("connected",function(){
     console.log("接続されました。");
