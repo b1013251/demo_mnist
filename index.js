@@ -66,10 +66,10 @@ io.sockets.on('connection', function(socket) {
   });
 
   // listen
-  server.listen(3000 ,function(){
+  server.listen(3000, '0.0.0.0' ,function(){
 	  var host = server.address().address;
 		var port = server.address().port;
 
-	  console.log('Example app listening at http://%s:%s', host, port);
+	  console.log('listening at http://%s:%s', host, port);
     console.log("サーバ起動中…")
   });

@@ -72,4 +72,4 @@ answer = y_conv
 # 結果表示
 results =  sess.run(answer, feed_dict={x: a, keep_prob:1.0})
 result = [round(results[0][0], 4),round(results[0][1], 4),round(results[0][2], 4),round(results[0][3], 4),round(results[0][4], 4),round(results[0][5], 4),round(results[0][6], 4),round(results[0][7], 4),round(results[0][8], 4),round(results[0][9], 4),results[0].argmax()]
-print result
+print(result)

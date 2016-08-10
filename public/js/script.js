@@ -54,16 +54,26 @@ $(function(){
 
     var result = data.split(",")
     var result0 = result[0].split("[")
-    $("#result0").text(result0[1]);
-    $("#result1").text(result[1]);
-    $("#result2").text(result[2]);
-    $("#result3").text(result[3]);
-    $("#result4").text(result[4]);
-    $("#result5").text(result[5]);
-    $("#result6").text(result[6]);
-    $("#result7").text(result[7]);
-    $("#result8").text(result[8]);
-    $("#result9").text(result[9]);
+
+	var result_num = result[10].split("]")[0].slice(1);
+
+    for(var i = 0; i < 10; i++) {
+      $("#result" + i).css({'background-color' : ''});
+    }
+
+    $("#result0").text(Number(result0[1]).toFixed(5));
+    $("#result1").text(Number(result[1]).toFixed(5));
+    $("#result2").text(Number(result[2]).toFixed(5));
+    $("#result3").text(Number(result[3]).toFixed(5));
+    $("#result4").text(Number(result[4]).toFixed(5));
+    $("#result5").text(Number(result[5]).toFixed(5));
+    $("#result6").text(Number(result[6]).toFixed(5));
+    $("#result7").text(Number(result[7]).toFixed(5));
+    $("#result8").text(Number(result[8]).toFixed(5));
+    $("#result9").text(Number(result[9]).toFixed(5) );
+
+    console.log("#result" + result_num)
+    $("#result"+result_num).css({'background-color':'#afa'});
   });
 
   /*************************************

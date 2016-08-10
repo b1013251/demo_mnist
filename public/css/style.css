@@ -1,254 +1,57 @@
 * {
   margin : 0;
   padding : 0;
-	user-select: none;
+  user-select: none;
 }
 
-#insert {
-  position: absolute;
-  top: 10px;
-  left: 15px;
+body {
+  font-size : 17px;
+  margin-top : 1em;
 }
 
-#input_w {
-  position: absolute;
-  top: 10px;
-  left: 500px;
+canvas {
+	border : 1px solid #aaa;
 }
 
-#output_w {
-  position: absolute;
-  top: 270px;
-  left: 500px;
+#input_area {
+  float : left;
+  margin-left : 1em;
+  margin-right : 1em;
 }
 
-#word0 {
-  position: absolute;
-  top: 310px;
-  left: 500px;
+#button_area {
+  margin-top : 2em;
 }
 
-#word1 {
-  position: absolute;
-  top: 345px;
-  left: 500px;
+#button_area input {
+  margin-left : 3em;
 }
 
-#word2 {
-  position: absolute;
-  top: 380px;
-  left: 500px;
+#result_area {
 }
 
-#word3 {
-  position: absolute;
-  top: 415px;
-  left: 500px;
+table {    
+  border-collapse : collapse;
+  width : 200px;
 }
 
-#word4 {
-  position: absolute;
-  top: 450px;
-  left: 500px;
+td {
+  border:  1px solid #aaa;
+  padding : 0.3em 1em;
 }
 
-#word5 {
-  position: absolute;
-  top: 485px;
-  left: 500px;
+td:first-child {
+  background-color : #eee;
+  width : 10%;
 }
 
-#word6 {
-  position: absolute;
-  top: 520px;
-  left: 500px;
+input[type="button"] {
+  background : -moz-linear-gradient(top, #fff 0%, #eee);
+  background : -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+  border : 1px solid #aaa;
+  width : 10em;
+  padding : 10px 0;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
 }
 
-#word7 {
-  position: absolute;
-  top: 555px;
-  left: 500px;
-}
-
-#word8 {
-  position: absolute;
-  top: 590px;
-  left: 500px;
-}
-
-#word9 {
-  position: absolute;
-  top: 625px;
-  left: 500px;
-}
-
-#result0 {
-  position: absolute;
-  top: 310px;
-  left: 700px;
-}
-
-#result1 {
-  position: absolute;
-  top: 345px;
-  left: 700px;
-}
-
-#result2 {
-  position: absolute;
-  top: 380px;
-  left: 700px;
-}
-
-#result3 {
-  position: absolute;
-  top: 415px;
-  left: 700px;
-}
-
-#result4 {
-  position: absolute;
-  top: 450px;
-  left: 700px;
-}
-
-#result5 {
-  position: absolute;
-  top: 485px;
-  left: 700px;
-}
-
-#result6 {
-  position: absolute;
-  top: 520px;
-  left: 700px;
-}
-
-#result7 {
-  position: absolute;
-  top: 555px;
-  left: 700px;
-}
-
-#result8 {
-  position: absolute;
-  top: 590px;
-  left: 700px;
-}
-
-#result9 {
-  position: absolute;
-  top: 625px;
-  left: 700px;
-}
-
-#line1 {
-  position: absolute;
-  top: 250px;
-  left: 500px;
-}
-
-#line2 {
-  position: absolute;
-  top: 285px;
-  left: 500px;
-}
-
-#line3 {
-  position: absolute;
-  color: silver;
-  top: 320px;
-  left: 500px;
-}
-
-#line4 {
-  position: absolute;
-  color: silver;
-  top: 355px;
-  left: 500px;
-}
-
-#line5 {
-  position: absolute;
-  color: silver;
-  top: 390px;
-  left: 500px;
-}
-
-#line6 {
-  position: absolute;
-  color: silver;
-  top: 425px;
-  left: 500px;
-}
-
-#line7 {
-  position: absolute;
-  color: silver;
-  top: 460px;
-  left: 500px;
-}
-
-#line8 {
-  position: absolute;
-  color: silver;
-  top: 495px;
-  left: 500px;
-}
-
-#line9 {
-  position: absolute;
-  color: silver;
-  top: 530px;
-  left: 500px;
-}
-
-#line10 {
-  position: absolute;
-  color: silver;
-  top: 565px;
-  left: 500px;
-}
-
-#line11 {
-  position: absolute;
-  color: silver;
-  top: 600px;
-  left: 500px;
-}
-
-#line12 {
-  position: absolute;
-  top: 635px;
-  left: 500px;
-}
-
-#paint {
-  border : 1px solid black;
-  position: absolute;
-  top: 35px;
-  left: 10px;
-}
-
-#input {
-  border : 1px solid black;
-  position: absolute;
-  top: 35px;
-  left: 500px;
-}
-
-#clear {
-  position: absolute;
-	width: 200px;
-	height : 60px;
-  top: 460px;
-  left: 30px;
-}
-
-#send {
-  position: absolute;
-	width : 200px;
-	height : 60px;
-  top: 460px;
-  left: 257px;
-}
