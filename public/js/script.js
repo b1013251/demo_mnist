@@ -4,10 +4,9 @@ $(function(){
   スマートフォン対応
   *************************************/
   var stopDefault = function(event) {
-    if (event.touches[0].target.tagName.toLowerCase() == "li") {return;}
-    if (event.touches[0].target.tagName.toLowerCase() == "input") {return;}
-
-    event.preventDefault();
+    if (event.touches[0].target.tagName.toLowerCase() == "canvas")
+			event.preventDefault();
+		return;
   }
 
   // タッチイベントの初期化
@@ -61,16 +60,16 @@ $(function(){
       $("#result" + i).css({'background-color' : ''});
     }
 
-    $("#result0").text(Number(result0[1]).toFixed(5));
-    $("#result1").text(Number(result[1]).toFixed(5));
-    $("#result2").text(Number(result[2]).toFixed(5));
-    $("#result3").text(Number(result[3]).toFixed(5));
-    $("#result4").text(Number(result[4]).toFixed(5));
-    $("#result5").text(Number(result[5]).toFixed(5));
-    $("#result6").text(Number(result[6]).toFixed(5));
-    $("#result7").text(Number(result[7]).toFixed(5));
-    $("#result8").text(Number(result[8]).toFixed(5));
-    $("#result9").text(Number(result[9]).toFixed(5) );
+    $("#result0").text(Number(result0[1]).toFixed(7));
+    $("#result1").text(Number(result[1]).toFixed(7));
+    $("#result2").text(Number(result[2]).toFixed(7));
+    $("#result3").text(Number(result[3]).toFixed(7));
+    $("#result4").text(Number(result[4]).toFixed(7));
+    $("#result5").text(Number(result[5]).toFixed(7));
+    $("#result6").text(Number(result[6]).toFixed(7));
+    $("#result7").text(Number(result[7]).toFixed(7));
+    $("#result8").text(Number(result[8]).toFixed(7));
+    $("#result9").text(Number(result[9]).toFixed(7) );
 
     console.log("#result" + result_num)
     $("#result"+result_num).css({'background-color':'#afa'});

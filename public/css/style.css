@@ -11,12 +11,13 @@ body {
 
 canvas {
 	border : 1px solid #aaa;
+	margin : 1em 0;
 }
 
 #input_area {
   float : left;
-  margin-left : 1em;
-  margin-right : 1em;
+  margin-left : 3em;
+  margin-right : 3em;
 }
 
 #button_area {
@@ -24,15 +25,20 @@ canvas {
 }
 
 #button_area input {
-  margin-left : 3em;
+  margin-left : 1em;
 }
 
 #result_area {
+	margin-bottom : 1em;
 }
 
 table {    
   border-collapse : collapse;
   width : 200px;
+}
+
+th {
+	padding-bottom: 1em;
 }
 
 td {
@@ -53,5 +59,23 @@ input[type="button"] {
   padding : 10px 0;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
+	font-size : 1em;
 }
 
+@media(max-width: 700px) {
+	#input_area {
+		float: none;
+		margin: 1em;
+	}
+	#result_area {
+		margin-left : 1em;
+		margin-top : 1em;
+		margin-bottom : 1em;
+	}
+	#paint {
+		margin-right : 1em;
+	}
+	input[type="button"] {
+		font-size : 0.7em;		
+	}
+}
